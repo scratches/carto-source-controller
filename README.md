@@ -8,14 +8,8 @@ The example here works on [Kind](https://github.com/kubernetes-sigs/kind) with a
 
 ```
 $ kubctl get all
-NAME                                READY   STATUS    RESTARTS   AGE
-
 NAME                   TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
 service/kubernetes     ClusterIP   10.96.0.1       <none>        443/TCP   21h
-
-NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
-
-NAME                                      DESIRED   CURRENT   READY   AGE
 ```
 
 and
