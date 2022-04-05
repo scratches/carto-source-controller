@@ -1,0 +1,11 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: demo
+  namespace: default
+  labels:
+    workload-intent: image-prebuilt
+spec:
+  serviceAccountName: admin
+  source:
+    image: localhost:5000/apps/demo

@@ -1,0 +1,21 @@
+---
+apiVersion: carto.run/v1alpha1
+kind: ClusterSupplyChain
+metadata:
+  name: supply-chain
+spec:
+  selector:
+    workload-intent: image-prebuilt
+  resources:
+    - name: image-builder
+      templateRef:
+        kind: ClusterImageTemplate
+        name: prebuilt-image
+
+    - name: deployer
+      templateRef:
+        kind: ClusterTemplate
+        name: deployment
+      images:
+        - resource: image-builder
+          name: image
