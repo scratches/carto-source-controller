@@ -1,6 +1,6 @@
 # Simple Supply Chain with Cartographer
 
-The aim is to create a supply chain that makes k8s deployments from pre-built images. The simplest way that could possibly work would be with a hard-coded image in the workload. To make it slightly more interesting we want to monitor the image repository and update the deployment if the image changes. There is an open source Tanzu [source-controller](https://github.com/vmware-tanzu/source-controller) that meets that need.
+The aim is to create a supply chain that makes k8s deployments from pre-built images. The simplest way that could possibly work would be with a hard-coded image in the workload. To make it slightly more interesting we want to monitor the image repository and update the deployment if the image changes. There is an closed source Tanzu [source-controller](https://github.com/vmware-tanzu/source-controller) that meets that need.
 
 ## Setting up a Cluster
 
